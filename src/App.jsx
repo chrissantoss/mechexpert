@@ -3,15 +3,14 @@ import { Typography, Card, CardContent, CardMedia, Tabs, Tab, Button, AppBar, Cs
 import BuildIcon from '@material-ui/icons/Build';
 import landing from './pages/landing'
 import Testimonials from './components /Testimonials';
+import LandingHeader from './components /LandingHeader';
 
-const useStyles = makeStyles((theme) => ({
 
-}))
+
 const App = () => {
+    
     return (
-        <h1>
-            this is a test for my app
-        </h1>
+        <LandingHeader />
     );
 }
 

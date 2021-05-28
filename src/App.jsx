@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
 const App = () => {
     return (
         <h1>
-            hello
+            this is a test for my app
         </h1>
     );
 }

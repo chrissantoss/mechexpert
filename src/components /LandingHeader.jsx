@@ -11,6 +11,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormGroup from '@material-ui/core/FormGroup';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
+import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -50,8 +51,12 @@ export default function LandingHeader() {
             <MenuIcon />
           </IconButton> */}
           <Typography variant="h6" className={classes.title}>
-            Photos
+                      Photos
           </Typography>
+                  
+                  <Button>Browse Services</Button>
+                  <Button>Meet the Team</Button>
+                  <Button>Purchase</Button>
           {auth && (
             <div>
               <IconButton
@@ -77,7 +82,9 @@ export default function LandingHeader() {
                 }}
                 open={open}
                 onClose={handleClose}
-              >
+                >
+                
+                              
                 <MenuItem onClick={handleClose}>Profile</MenuItem>
                 <MenuItem onClick={handleClose}>My account</MenuItem>
               </Menu>

@@ -22,7 +22,14 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
+    color: '#4C11F2',
+    fontFamily: 'Inter',
+    fontSize: 30,
   },
+  navBarText: {
+    fontFamily: 'Inter',
+    fontSize: 14,
+  }
 }));
 
 export default function LandingHeader() {
@@ -47,48 +54,16 @@ export default function LandingHeader() {
     <div className={classes.root}>
       <AppBar />
       <Toolbar>
-        {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon />
-          </IconButton> */}
         <Typography variant="h6" className={classes.title}>
-          Photos
-          </Typography>
+          MechExpert
+        </Typography>
 
-        <Button>Browse Services</Button>
-        <Button>Meet the Team</Button>
-        <Button>Purchase</Button>
+        <Button className={classes.navBarText}>Crash Course</Button>
+        <Button className={classes.navBarText}>Quiz Types</Button>
+        <Button className={classes.navBarText}>Interviews</Button>
+        <Button className={classes.navBarText}>Discussion</Button>
         {auth && (
-          <div>
-            <IconButton
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleMenu}
-              color="inherit"
-            >
-              <AccountCircle />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorEl}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={open}
-              onClose={handleClose}
-            >
-
-
-              <MenuItem onClick={handleClose}>Profile</MenuItem>
-              <MenuItem onClick={handleClose}>My account</MenuItem>
-            </Menu>
-          </div>
+          <Button>Sign In</Button>
         )}
       </Toolbar>
     </div>

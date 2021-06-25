@@ -29,7 +29,12 @@ const useStyles = makeStyles((theme) => ({
   navBarText: {
     fontFamily: 'Inter',
     fontSize: 14,
-  }
+  },
+  signInText: {
+    fontFamily: 'Inter',
+    fontSize: 14,
+    color: '#4C11F2',
+  },
 }));
 
 export default function LandingHeader() {
@@ -63,7 +68,7 @@ export default function LandingHeader() {
         <Button className={classes.navBarText}>Interviews</Button>
         <Button className={classes.navBarText}>Discussion</Button>
         {auth && (
-          <Button>Sign In</Button>
+          <Button className={classes.signInText}>Sign In</Button>
         )}
       </Toolbar>
     </div>

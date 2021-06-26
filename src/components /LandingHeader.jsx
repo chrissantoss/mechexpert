@@ -63,10 +63,10 @@ export default function LandingHeader() {
           MechExpert
         </Typography>
 
-        <Button className={classes.navBarText}>Crash Course</Button>
-        <Button className={classes.navBarText}>Quiz Types</Button>
-        <Button className={classes.navBarText}>Interviews</Button>
-        <Button className={classes.navBarText}>Discussion</Button>
+        <Button className={classes.navBarText} style={{ textTransform: 'none' }}>Crash Course</Button>
+        <Button className={classes.navBarText} style={{ textTransform: 'none' }}>Quiz Types</Button>
+        <Button className={classes.navBarText} style={{ textTransform: 'none' }}>Interviews</Button>
+        <Button className={classes.navBarText} style={{ textTransform: 'none' }}>Discussion</Button>
         {auth && (
           <Button className={classes.signInText}>Sign In</Button>
         )}

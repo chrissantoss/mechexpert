@@ -5,15 +5,28 @@ import Button from "@material-ui/core/Button";
 
 const useStyles = makeStyles((theme) => ({
     introTitle: {
-        fontFamily: 'Semi Bold',
-        fontSize: 40,
-        height: 118,
-        width: 470,
-        left: 837
+        position: "absolute",
+        fontFamily: 'Inter',
+        fontSize: "40px",
+        fontStyle: "normal",
+        height: "118px",
+        width: "470px",
+        left: "837px",
+        top: "263px",
+
+        lineHeight: "120%",
+        letterSpacing: "-0.03em",
     },
     introDescription: {
         fontFamily: 'Inter',
-        fontSize: 14,
+        fontSize: "20px",
+        position: "absolute",
+        width: "429px",
+        height: "96px",
+        left: "829px",
+        top: "410px",
+        lineHeight: "160%",
+        letterSpacing: "-0.03em"
     },
     createAccountButton: {
         fontFamily: 'Source Sans Pro',

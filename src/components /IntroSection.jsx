@@ -19,7 +19,7 @@ export default function IntroSection() {
     return (
         <div>
             <Typography className={classes.introTitle}>Learn how to solve various mechanical engineering problems</Typography>
-            {/* <Typography className={classes.introDescription}>MechExpert provides you with the tools to help you succeed while strengthening your skills</Typography> */}
+            <Typography className={classes.introDescription}>MechExpert provides you with the tools to help you succeed while strengthening your skills</Typography>
         </div>
     )
 }

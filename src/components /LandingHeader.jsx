@@ -68,7 +68,7 @@ export default function LandingHeader() {
         <Button className={classes.navBarText} style={{ textTransform: 'none' }}>Interviews</Button>
         <Button className={classes.navBarText} style={{ textTransform: 'none' }}>Discussion</Button>
         {auth && (
-          <Button className={classes.signInText}>Sign In</Button>
+          <Button className={classes.signInText} style={{ textTransform: 'none' }}>Sign In</Button>
         )}
       </Toolbar>
     </div>

@@ -3,6 +3,7 @@ import { Typography, Card, CardContent, CardMedia, Tabs, Tab, Button, AppBar, Cs
 import BuildIcon from '@material-ui/icons/Build';
 import LandingHeader from './components /LandingHeader';
 import IntroSection from './components /IntroSection';
+import WhatIsMechExpert from './components /WhatIsMechExpert';
 
 
 
@@ -12,6 +13,7 @@ const App = () => {
         <div>
             <LandingHeader />
             <IntroSection />
+            <WhatIsMechExpert />
         </div>
 
     );
